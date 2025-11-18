@@ -1,0 +1,14 @@
+# 11/18/2025
+############
+# we need conf.py and index.rst
+# conf.py tells us packages
+# and index.rst tells us layout
+# we can include anything we want
+# as long as it has an .rst file
+# i.e. our pages will each have
+# page.rst
+
+
+sphinx-build -b html source build/html
+cd build/html
+python -m http.server 8000
